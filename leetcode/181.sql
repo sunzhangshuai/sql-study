@@ -20,4 +20,4 @@
 
 select Name Employee from Employee e where Salary > (select Salary from Employee where e.ManagerId = id);
 
-select e1.Name Employee from Employee e1, Employee e2 where e1.ManagerId = e2.id and e1.Salary > e2.Salary;
+select e1.Name Employee from Employee e1, Employee e2 where e1.ManagerId = e2.id and e1.Salary > e2.Salary; -- 优
